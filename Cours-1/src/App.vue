@@ -26,7 +26,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
-    color: white;
+  color: white;
 
 }
 
