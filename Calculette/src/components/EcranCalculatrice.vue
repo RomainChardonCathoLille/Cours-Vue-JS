@@ -1,7 +1,7 @@
 <template>
 <div id="ecran">
     <p>
-        <span v-for="item in affichage">{{affichage}}</span>
+        <span v-for="item in affichage" @update_calculator_screen="update_screen">{{item}}</span>
     </p>
 </div>
 </template>
@@ -18,6 +18,11 @@ export default defineComponent({
     props: {
         affichage: [],
     },
+    methods: {
+        update_screen(data){
+            this.affichage = data;
+        }
+    }
 })
 </script>
 
