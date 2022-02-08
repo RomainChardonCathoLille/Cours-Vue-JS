@@ -1,7 +1,4 @@
 <template>
-<div v-if="message_erreur == 1">
-    ERREUR DANS LE FORMULAIRE
-</div>
 <form v-if="confirme == 0" @submit="checkForm">
     <label for="name">Nom</label><br>
     <input type="text" name="name" v-model="nom" ><br>
